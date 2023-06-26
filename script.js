@@ -1,7 +1,17 @@
-function threeSum(arr, target) {
-// write your code here
-  // JavaScript Program to convert decimal to binary
+function decimalToBinary(n) {
+  let binary = '';
+  let quotient = n;
 
+  while (quotient !== 0) {
+    const remainder = quotient % 2;
+    binary = remainder + binary;
+    quotient = Math.floor(quotient / 2);
+  }
+
+  return binary;
 }
-
-module.exports = threeSum;
+    
+  
+ // return parseInt(binaryStr.split("").reverse().join(""))
+ 
+module.exports = decimalToBinary;
